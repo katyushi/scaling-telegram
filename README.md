@@ -6,3 +6,4 @@ para instalar os pacotes rode: yarn ou npm i
 para fazer o serve local: yarn run start ou npm run start
 
 ### Link online
+https://scaling-telegram.herokuapp.com/
