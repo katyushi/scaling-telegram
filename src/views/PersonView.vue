@@ -5,11 +5,10 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import peopleSearcher from '@/components/peopleSearcher.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'PersonView',
   components: {
     peopleSearcher
   }
