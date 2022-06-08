@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <HeaderSite></HeaderSite>
     <router-view/>
   </div>
 </template>
+
+<script>
+import HeaderSite from "./components/HeaderSite.vue";
+export default {
+  components: {
+    HeaderSite
+  }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
@@ -23,16 +29,7 @@
   box-sizing: border-box;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  margin: 0;
 }
 </style>

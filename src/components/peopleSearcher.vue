@@ -66,7 +66,6 @@ export default {
       })
     },
     nextPage() {
-      console.log('aaaaa');
       if (this.urlNext !== null) {
         this.currentPage = this.urlNext;
       }
@@ -92,7 +91,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 table {
   border-collapse: collapse;
   margin: 0 auto;
@@ -165,4 +164,14 @@ table tbody tr:last-of-type {
   text-transform: capitalize;
 }
 
+@media (max-width: 768px) {
+  table {
+    width: 94.444vw;
+    min-width: unset;
+  }
+  .button-ver-mais {
+    padding: 5px;
+    font-size: 13px;
+  }
+}
 </style>
