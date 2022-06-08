@@ -21,8 +21,8 @@
       </tbody>
     </table>
     <div class="button-holder">
-      <button v-on:click="prevPage()">prev</button>
-      <button v-on:click="nextPage()">next</button>
+      <button v-on:click="prevPage()" class="button-bottom">prev</button>
+      <button v-on:click="nextPage()" class="button-bottom">next</button>
     </div>
   </div>
 </template>
@@ -152,7 +152,7 @@ table tbody tr:last-of-type {
   justify-content: center;
 }
 
-.button-holder button {
+.button-holder .button-bottom {
   padding: 10px;
   background-color: #009879;
   border-radius: 5px;

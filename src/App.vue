@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <HeaderSite></HeaderSite>
-    <router-view/>
+    <router-view class="middle-content"/>
+    <FooterSite></FooterSite>
   </div>
 </template>
 
 <script>
 import HeaderSite from "./components/HeaderSite.vue";
+import FooterSite from "./components/FooterSite.vue";
 export default {
   components: {
-    HeaderSite
+    HeaderSite,
+    FooterSite
   }
 }
 </script>
@@ -31,5 +34,9 @@ export default {
 
 body {
   margin: 0;
+}
+
+.middle-content {
+  min-height: 999px;
 }
 </style>

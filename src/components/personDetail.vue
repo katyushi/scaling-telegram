@@ -84,6 +84,11 @@
         </tr>
       </tbody>
     </table>
+    <div class="button-holder">
+      <router-link to="/" class="button-bottom">
+        Voltar
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -211,6 +216,10 @@ ul {
   padding-top: 10px;
   border-top: 1px solid gray;
   padding-bottom: 0;
+}
+
+.button-holder {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
