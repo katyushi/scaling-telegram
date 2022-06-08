@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <peopleSearcher/>
+    <personDetail/>
   </div>
 </template>
 
 <script>
-import peopleSearcher from '@/components/peopleSearcher.vue'
+import personDetail from '@/components/personDetail.vue'
 
 export default {
   name: 'PersonView',
   components: {
-    peopleSearcher
+    personDetail
   }
 }
 </script>

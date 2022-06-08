@@ -11,7 +11,7 @@
         <tr v-for="person in peopleInfo" :key="person.index">
           <td>{{person.id}}</td>
           <td class="namePerson">
-            <router-link :to="'/person/'+person.id">{{person.name}}</router-link>
+            <router-link :to="{path:'/person',query:{id: person.id}}">{{person.name}}</router-link>
           </td>
         </tr>
       </tbody>
@@ -47,12 +47,10 @@ export default {
 
         if (response.data.previous) {
           this.urlPrev = parseInt(response.data.previous.substring('https://swapi.dev/api/people/?page='.length));
-          console.log(this.urlPrev);
         }
 
         if (response.data.next) {
           this.urlNext = parseInt(response.data.next.substring('https://swapi.dev/api/people/?page='.length));
-          console.log(this.urlNext);
         }
 
         response.data.results.forEach(person => {

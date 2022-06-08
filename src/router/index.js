@@ -19,14 +19,15 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/person/:id',
+    path: '/person',
     name: 'person',
     component: () => import(/* webpackChunkName: "person" */ '../views/PersonView.vue')
   }
 ]
 
 const router = new VueRouter({
-  routes
+  mode: 'history',
+  routes: routes
 })
 
 export default router
